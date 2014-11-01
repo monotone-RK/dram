@@ -1,0 +1,72 @@
+##############################################################################
+# DIGILENT ATLYS board with Xilinx Spartan-6 LX45 FPGA 324-pin BGA package   #
+##############################################################################
+NET CLK_IN     LOC="L15" | PERIOD=100 MHz; #
+NET RST_X_IN   LOC="T15" ;                 # RESET
+NET ULED<0>    LOC="U18" ;                 # LD0 (LED, Light Emitting Diode 0)
+NET ULED<1>    LOC="M14" ;                 # LD1 (LED, Light Emitting Diode 1)
+NET ULED<2>    LOC="N14" ;                 # LD2 (LED, Light Emitting Diode 2)
+NET ULED<3>    LOC="L14" ;                 # LD3 (LED, Light Emitting Diode 3)
+NET ULED<4>    LOC="M13" ;                 # LD4 (LED, Light Emitting Diode 4)
+NET ULED<5>    LOC="D4"  ;                 # LD5 (LED, Light Emitting Diode 5)
+NET ULED<6>    LOC="P16" ;                 # LD6 (LED, Light Emitting Diode 6)
+NET ULED<7>    LOC="N12" ;                 # LD7 (LED, Light Emitting Diode 7)
+
+## from AtlysGeneral.ucf
+##############################################################################
+# DDR2
+NET "DDR2CLK0"   LOC = "G3" | IOSTANDARD = DIFF_SSTL18_II;
+NET "DDR2CLK1"   LOC = "G1" | IOSTANDARD = DIFF_SSTL18_II;
+NET "DDR2CKE"    LOC = "H7" | IOSTANDARD = SSTL18_II;
+NET "DDR2RASN"   LOC = "L5" | IOSTANDARD = SSTL18_II;
+NET "DDR2CASN"   LOC = "K5" | IOSTANDARD = SSTL18_II;
+NET "DDR2WEN"    LOC = "E3" | IOSTANDARD = SSTL18_II;
+NET "DDR2RZQ"    LOC = "L6" | IOSTANDARD = SSTL18_II;
+NET "DDR2ZIO"    LOC = "C2" | IOSTANDARD = SSTL18_II;
+###########################
+NET "DDR2BA<0>"  LOC = "F2" | IOSTANDARD = SSTL18_II;
+NET "DDR2BA<1>"  LOC = "F1" | IOSTANDARD = SSTL18_II;
+NET "DDR2BA<2>"  LOC = "E1" | IOSTANDARD = SSTL18_II;
+
+NET "DDR2A<0>"   LOC = "J7" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<1>"   LOC = "J6" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<2>"   LOC = "H5" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<3>"   LOC = "L7" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<4>"   LOC = "F3" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<5>"   LOC = "H4" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<6>"   LOC = "H3" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<7>"   LOC = "H6" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<8>"   LOC = "D2" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<9>"   LOC = "D1" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<10>"  LOC = "F4" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<11>"  LOC = "D3" | IOSTANDARD = SSTL18_II;
+NET "DDR2A<12>"  LOC = "G6" | IOSTANDARD = SSTL18_II;
+
+NET "DDR2DQ<0>"  LOC = "L2" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<1>"  LOC = "L1" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<2>"  LOC = "K2" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<3>"  LOC = "K1" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<4>"  LOC = "H2" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<5>"  LOC = "H1" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<6>"  LOC = "J3" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<7>"  LOC = "J1" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<8>"  LOC = "M3" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<9>"  LOC = "M1" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<10>" LOC = "N2" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<11>" LOC = "N1" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<12>" LOC = "T2" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<13>" LOC = "T1" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<14>" LOC = "U2" | IOSTANDARD = SSTL18_II;
+NET "DDR2DQ<15>" LOC = "U1" | IOSTANDARD = SSTL18_II;
+
+NET "DDR2UDQS"   LOC = "P2" | IOSTANDARD = DIFF_SSTL18_II;
+NET "DDR2UDQSN"  LOC = "P1" | IOSTANDARD = DIFF_SSTL18_II;
+NET "DDR2LDQS"   LOC = "L4" | IOSTANDARD = DIFF_SSTL18_II;
+NET "DDR2LDQSN"  LOC = "L3" | IOSTANDARD = DIFF_SSTL18_II;
+NET "DDR2LDM"    LOC = "K3" | IOSTANDARD = SSTL18_II;
+NET "DDR2UDM"    LOC = "K4" | IOSTANDARD = SSTL18_II;
+NET "DDR2ODT"    LOC = "K6" | IOSTANDARD = SSTL18_II;
+##############################################################################
+# NET "DDR2ZIO"    LOC="C2"; # ??
+# NET "DDR2RZM"    LOC="L6"; # ??
+##############################################################################
